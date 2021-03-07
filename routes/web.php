@@ -1,7 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 // use App\Http\Controllers\ContacController;
 
+=======
+
+// use App\Http\Controllers\ContacController;
+
+>>>>>>> 95da7125d92ca22ec160be0ed1ac163f4703015b
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
@@ -19,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 // Route::get('/hello', function () {
 //     return "Hello World";
 // });
@@ -73,8 +80,15 @@ use Illuminate\Support\Facades\Route;
 // Route::resource('contact', ContacController::class);
 
 // Route::get('/home', [IndexController::class, 'index'])->name('index.home');
+=======
+
+Route::get('/home', [IndexController::class, 'index'])->name('index.home');
+>>>>>>> 95da7125d92ca22ec160be0ed1ac163f4703015b
 Route::get('/about', [AboutController::class, 'about'])->name('index.about');
 Route::get('/blog', [BlogController::class, 'blog'])->name('index.blog');
 Route::resource('contact', ContactController::class);
 
+<<<<<<< HEAD
 Route::get('/', [IndexController::class, 'post'])->name('index.home');
+=======
+>>>>>>> 95da7125d92ca22ec160be0ed1ac163f4703015b
