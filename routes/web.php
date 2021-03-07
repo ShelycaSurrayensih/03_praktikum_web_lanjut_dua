@@ -72,7 +72,9 @@ use Illuminate\Support\Facades\Route;
 
 // Route::resource('contact', ContacController::class);
 
-Route::get('/home', [IndexController::class, 'index'])->name('index.home');
+// Route::get('/home', [IndexController::class, 'index'])->name('index.home');
 Route::get('/about', [AboutController::class, 'about'])->name('index.about');
 Route::get('/blog', [BlogController::class, 'blog'])->name('index.blog');
 Route::resource('contact', ContactController::class);
+
+Route::get('/', [IndexController::class, 'post'])->name('index.home');
